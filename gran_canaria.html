@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gran Canaria</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .loader .spinner {
+            width: 50px;
+            height: 50px;
+            border: 6px solid #ccc;
+            border-top: 6px solid #007070;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        header {
+            background: url('gran_canaria.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            background-color: #007070;
+            padding: 0.5rem 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffdd57;
+        }
+
+        .content {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        footer {
+            background: #008080;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body onload="setTimeout(hideLoader, 2000)">
+    <div class="loader" id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <header>
+        <h1>Gran Canaria</h1>
+        <p>Wyspa okrzyknięta kontynentem w miniaturze!</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Strona Główna</a>
+        <a href="teneryfa.html">Teneryfa</a>
+        <a href="lanzarote.html">Lanzarote</a>
+        <a href="fuerteventura.html">Fuerteventura</a>
+        <a href="la_palma.html">La Palma</a>
+    </nav>
+
+    <div class="content">
+        <h2>Odkryj Gran Canarie!</h2>
+        <p>Gran Canaria, trzecia co do wielkości wyspa archipelagu Wysp Kanaryjskich, to miejsce, które zachwyca swoją różnorodnością. <br> Nazywana "kontynentem w miniaturze", oferuje spektakularne krajobrazy, od złocistych plaż po zielone wąwozy, skaliste klify i pustynne wydmy. <br> Dzięki temu każdy znajdzie tu coś dla siebie, niezależnie od tego, czy marzy o relaksie, aktywnym wypoczynku czy bliskim kontakcie z naturą.
+ </p>
+        <img src="gran_canariafoto.jpg" alt="Krajobraz Teneryfy" style="max-width: 50%; border: 2px solid #ddd; border-radius: 8px; margin-top: 1rem;">
+		<br>
+		<br>
+		<br>
+		<p>Na południu wyspy królują słynne wydmy Maspalomas – miejsce, które przypomina saharyjską pustynię, a jednocześnie oferuje luksusowe kurorty, takie jak Playa del Inglés czy Puerto Rico, z bogatym zapleczem turystycznym. 
+ </p>
+        <img src="wydmy.jpg" alt="Krajobraz Teneryfy" style="max-width: 50%; border: 2px solid #ddd; border-radius: 8px; margin-top: 1rem;">
+		<br>
+		<br>
+		<br>
+		<p>Z kolei północ i interior wyspy zapraszają do odkrywania tradycyjnych wiosek, takich jak Tejeda, oraz zapierających dech w piersiach krajobrazów, w tym majestatycznego wulkanicznego monolitu Roque Nublo – symbolu wyspy.
+ </p>
+		<img src="tajeda.jpg" alt="Krajobraz Teneryfy" style="max-width: 50%; border: 2px solid #ddd; border-radius: 8px; margin-top: 1rem;">
+		<br>
+		<br>
+		<br>
+		<p>Gran Canaria to także raj dla miłośników sportów wodnych, takich jak windsurfing, nurkowanie czy żeglarstwo. Wyspa oferuje świetne warunki przez cały rok, a w jej wodach można spotkać delfiny i wieloryby.
+</p>
+		<img src="wybrzeze_canaria.jpg" alt="Krajobraz Teneryfy" style="max-width: 50%; border: 2px solid #ddd; border-radius: 8px; margin-top: 1rem;">
+		<br>
+		<br>
+		<br>
+		<p>Stolica wyspy, Las Palmas de Gran Canaria, to kosmopolityczne miasto z piękną plażą Las Canteras, malowniczą starówką Vegueta oraz bogatą ofertą kulturalną i gastronomiczną. Miłośnicy historii i kultury mogą odkryć ślady kolonialnej przeszłości i odwiedzić Dom Kolumba, związany z podróżami wielkiego odkrywcy.
+ </p>
+		<img src="las_palmas.jpg" alt="Krajobraz Teneryfy" style="max-width: 50%; border: 2px solid #ddd; border-radius: 8px; margin-top: 1rem;">
+		
+		<br>
+		<br>
+		<br>
+		<p><b>Niezależnie od tego, czy szukasz spokoju na plaży, emocjonujących przygód czy inspirujących widoków, Gran Canaria czeka, by Cię oczarować swoją magią i różnorodnością. To wyspa, na której każdy dzień staje się niezapomnianą przygodą.</b></p>
+    </div>
+
+    <footer>
+        <p>&copy; <b> Bartosz Żądło 2025 - Wyspy Kanaryjskie. <br> Wszelkie prawa zastrzeżone. </p> </b>
+    </footer>
+	
+	   <script>
+        function hideLoader() {
+            document.getElementById('loader').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>

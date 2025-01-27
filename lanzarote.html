@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanzarote</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .loader .spinner {
+            width: 50px;
+            height: 50px;
+            border: 6px solid #ccc;
+            border-top: 6px solid #007070;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        header {
+            background: url('lanzarote.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            background-color: #007070;
+            padding: 0.5rem 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffdd57;
+        }
+
+        .content {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        footer {
+            background: #008080;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body onload="setTimeout(hideLoader, 2000)">
+    <div class="loader" id="loader">
+        <div class="spinner"></div>
+    </div>
+    <header>
+        <h1>Lanzarote</h1>
+        <p>Wyspa wulkanicznych krajobrazów i niezwykłej architektury!</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Strona Główna</a>
+        <a href="teneryfa.html">Teneryfa</a>
+        <a href="gran_canaria.html">Gran Canaria</a>
+        <a href="fuerteventura.html">Fuerteventura</a>
+        <a href="la_palma.html">La Palma</a>
+    </nav>
+
+    <div class="content">
+         <h2>Zwiedź Lanzarote!!!</h2>
+        <p>Lanzarote, najbardziej unikalna spośród Wysp Kanaryjskich, to prawdziwy raj dla miłośników wulkanicznych krajobrazów i ekologicznego piękna. Nazywana „Wyspą Wulkanów”, zachwyca surrealistycznymi widokami, które przypominają powierzchnię Marsa. Dzięki temu Lanzarote jest miejscem, które łączy surową naturę z ludzką kreatywnością, oferując niezapomniane doświadczenia.
+ </p>
+        <img src="lanzarotewidok.jpg" alt="Krajobraz Teneryfy" style="max-width: 50%; border: 2px solid #ddd; border-radius: 8px; margin-top: 1rem;">
+		<br>
+		<br>
+		<br>
+		<p>Serce wyspy stanowi Park Narodowy Timanfaya – rozległe pole lawy i wulkanicznych stożków, gdzie można podziwiać potęgę natury. Niezwykłe krajobrazy, w tym kolorowe skały i gorące gejzery, są prawdziwym spektaklem dla odwiedzających. Warto wybrać się na wycieczkę wielbłądem lub specjalnym autobusem, by w pełni docenić ten wulkaniczny cud.
+ </p>
+        <img src="park_timanfaya.jpg" alt="Krajobraz Teneryfy" style="max-width: 50%; border: 2px solid #ddd; border-radius: 8px; margin-top: 1rem;">
+		<br>
+		<br>
+		<br>
+		<p>Lanzarote to także wyspa harmonii między człowiekiem a przyrodą. Duża w tym zasługa wizjonerskiego artysty i architekta Césara Manrique, który pozostawił po sobie unikalne dzieła, takie jak Jameos del Agua – system jaskiń wulkanicznych zbudowany w zgodzie z otaczającym krajobrazem, czy Mirador del Río, z którego rozciąga się spektakularny widok na pobliską wyspę La Graciosa.
+</p>
+		<img src="jameosdelagua.jpg" alt="Krajobraz Teneryfy" style="max-width: 50%; border: 2px solid #ddd; border-radius: 8px; margin-top: 1rem;">
+		<br>
+		<br>
+		<br>
+		<p>Plaże Lanzarote są równie wyjątkowe. Od złocistych piasków Playa Blanca i Papagayo po czarne, wulkaniczne plaże w Puerto del Carmen – każda z nich oferuje coś innego. Wyspa jest również rajem dla surferów, z doskonałymi warunkami do sportów wodnych, takimi jak windsurfing czy kitesurfing.
+</p>
+		<img src="plaza_lanzarote.jpg" alt="Krajobraz Teneryfy" style="max-width: 50%; border: 2px solid #ddd; border-radius: 8px; margin-top: 1rem;">
+		<br>
+		<br>
+		<br>
+		<p>Kuchnia Lanzarote zachwyca prostotą i smakiem. Lokalne specjały, takie jak świeże ryby, papas arrugadas z mojo czy kanaryjskie sery, doskonale łączą się z winami i tropikalnymi owocami uprawianymi na wyspie.
+ </p>
+		<img src="kuchnia_lanzarote.jpg" alt="Krajobraz Teneryfy" style="max-width: 50%; border: 2px solid #ddd; border-radius: 8px; margin-top: 1rem;">
+<br>
+<br>
+<br>
+<b>
+<p>Lanzarote to miejsce, które zaskakuje na każdym kroku – od niezwykłych krajobrazów po dzieła sztuki wtopione w naturę. To wyspa, która zachęca do refleksji, inspiruje i pozostawia w sercach odwiedzających niezapomniane wrażenia.
+
+</p>
+</b>
+    </div>
+
+    <footer>
+          <p>&copy; <b> Bartosz Żądło 2025 - Wyspy Kanaryjskie. <br> Wszelkie prawa zastrzeżone. </p> </b>
+    </footer>
+
+    <script>
+        function hideLoader() {
+            document.getElementById('loader').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>

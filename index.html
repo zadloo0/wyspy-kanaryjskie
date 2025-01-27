@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wyspy Kanaryjskie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background: url('kanaryjskie.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            background-color: #007070;
+            padding: 0.5rem 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffdd57;
+        }
+
+        .content {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        .islands-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .island-card {
+            background: white;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .island-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .island-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .island-card h3 {
+            margin: 1rem 0;
+        }
+
+        .island-card p {
+            padding: 0 1rem 1rem;
+        }
+
+        .island-card a {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: #007070;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .island-card a:hover {
+            transform: scale(1.1);
+            background-color: #ffdd57;
+            color: #333;
+        }
+
+        footer {
+            background: #008080;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Wyspy Kanaryjskie</h1>
+        <p>Odkryj piękno każdego zakątka tego archipelagu!</p>
+    </header>
+
+    <nav>
+        <a href="teneryfa.html">Teneryfa</a>
+        <a href="gran_canaria.html">Gran Canaria</a>
+        <a href="lanzarote.html">Lanzarote</a>
+        <a href="fuerteventura.html">Fuerteventura</a>
+        <a href="la_palma.html">La Palma</a>
+    </nav>
+
+    <div class="content">
+        <h2>Witaj na Wyspach Kanaryjskich</h2>
+        <p>Wyspy Kanaryjskie to miejsce pełne różnorodności - od piaszczystych plaż, przez wulkaniczne krajobrazy, aż po bujne lasy. Sprawdź, co każda z wysp ma do zaoferowania!</p>
+
+        <div class="islands-grid">
+            <div class="island-card">
+                <img src="teneryfa.jpg" alt="Teneryfa">
+                <h3>Teneryfa</h3>
+                <p>Największa wyspa archipelagu, znana z wulkanu Teide i różnorodnych krajobrazów.</p>
+                <a href="teneryfa.html">Dowiedz się więcej</a>
+            </div>
+            <div class="island-card">
+                <img src="gran_canaria.jpg" alt="Gran Canaria">
+                <h3>Gran Canaria</h3>
+                <p>Wyspa okrzyknięta kontynentem w miniaturze dzięki swojej różnorodności.</p>
+                <a href="gran_canaria.html">Dowiedz się więcej</a>
+           </div>
+            <div class="island-card">
+                <img src="lanzarote.jpg" alt="Lanzarote">
+                <h3>Lanzarote</h3>
+                <p>Wulkaniczne krajobrazy i niezwykła architektura Césara Manrique.</p>
+                <a href="lanzarote.html">Dowiedz się więcej</a>
+            </div>
+            <div class="island-card">
+                <img src="fuerteventura.jpg" alt="Fuerteventura">
+                <h3>Fuerteventura</h3>
+                <p>Raj dla miłośników plaż i sportów wodnych.</p> <br>
+                <a href="fuerteventura.html">Dowiedz się więcej</a>
+            </div>
+            <div class="island-card">
+                <img src="la_palma.jpg" alt="La Palma">
+                <h3>La Palma</h3>
+                <p>"La Isla Bonita" z bujnymi lasami i czystym niebem idealnym do obserwacji gwiazd.</p>
+                <a href="la_palma.html">Dowiedz się więcej</a>
+            </div>
+        </div>
+    </div>
+<br>
+<br>
+<br>
+<br>
+    <footer>
+        <p>&copy; <b> Bartosz Żądło 2025 - Wyspy Kanaryjskie. <br> Wszelkie prawa zastrzeżone. </p> </b>
+    </footer>
+</body>
+</html>

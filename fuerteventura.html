@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuerteventura</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .loader .spinner {
+            width: 50px;
+            height: 50px;
+            border: 6px solid #ccc;
+            border-top: 6px solid #007070;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        header {
+            background: url('Fuerteventura.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            background-color: #007070;
+            padding: 0.5rem 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffdd57;
+        }
+
+        .content {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        footer {
+            background: #008080;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body onload="setTimeout(hideLoader, 2000)">
+    <div class="loader" id="loader">
+        <div class="spinner"></div>
+    </div>
+    
+    <header>
+        <h1>Fuerteventura</h1>
+        <p>Raj dla miłośników plaż i sportów wodnych!</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Strona Główna</a>
+        <a href="teneryfa.html">Teneryfa</a>
+        <a href="gran_canaria.html">Gran Canaria</a>
+        <a href="lanzarote.html">Lanzarote</a>
+        <a href="la_palma.html">La Palma</a>
+    </nav>
+
+    <div class="content">
+                <h2>Zobacz Fuerteventurę!</h2>
+        <p>Fuerteventura, druga co do wielkości wyspa w archipelagu Wysp Kanaryjskich, to prawdziwy raj dla miłośników plaż i błogiego wypoczynku. Znana ze swoich rozległych, złocistych wybrzeży, krystalicznie czystej wody i spokojnej atmosfery, wyspa oferuje wszystko, czego potrzeba, aby naładować baterie z dala od zgiełku codzienności.
+
+ </p>
+        <img src="fuerteventurawidok.jpg" alt="Krajobraz Teneryfy" style="max-width: 50%; border: 2px solid #ddd; border-radius: 8px; margin-top: 1rem;">
+		<br>
+		<br>
+		<br>
+		<p>Wyspa słynie z jednych z najpiękniejszych plaż w Europie. Corralejo i Sotavento to miejsca, które zachwycają rozległymi wydmami i turkusowym oceanem. Idealne zarówno dla rodzin, jak i miłośników sportów wodnych, takich jak windsurfing, kitesurfing czy nurkowanie. Dzięki stałym wiatrom i doskonałym warunkom Fuerteventura jest jednym z najlepszych miejsc na świecie do uprawiania tych sportów.
+
+ </p>
+        <img src="plaza_fuerta.jpg" alt="Krajobraz Teneryfy" style="max-width: 50%; border: 2px solid #ddd; border-radius: 8px; margin-top: 1rem;">
+		<br>
+		<br>
+		<br>
+		<p>Naturalne piękno wyspy można odkrywać w jej dziewiczych zakątkach, takich jak Park Naturalny Corralejo z rozległymi wydmami czy malownicza wyspa Lobos, idealna na jednodniowy wypad. Wnętrze wyspy to kraina wulkanicznych krajobrazów, urokliwych wiosek i tradycyjnych plantacji aloesu, który jest jednym z symboli Fuerteventury.
+
+</p>
+		<img src="corralejo.jpg" alt="Krajobraz Teneryfy" style="max-width: 50%; border: 2px solid #ddd; border-radius: 8px; margin-top: 1rem;">
+		<br>
+		<br>
+		<br>
+		<p>Miłośnicy lokalnej kultury powinni odwiedzić Betancurię – pierwszą stolicę wyspy, gdzie wśród kolonialnej architektury można poczuć ducha dawnych czasów. Nie można też pominąć targów rzemieślniczych, gdzie znajdziemy lokalne wyroby, takie jak słynne sery kozie Majorero, które zdobywają międzynarodowe nagrody.
+
+</p>
+		<img src="betencurie.jpg" alt="Krajobraz Teneryfy" style="max-width: 50%; border: 2px solid #ddd; border-radius: 8px; margin-top: 1rem;">
+		<br>
+		<br>
+		<br>
+		<p>Kuchnia Fuerteventury to uczta dla podniebienia. Świeże ryby, owoce morza i tradycyjne dania kanaryjskie, takie jak papas arrugadas z mojo, zachwycą każdego smakosza. A do tego kieliszek lokalnego wina lub tropikalne koktajle przy zachodzie słońca – idealny sposób na zakończenie dnia.
+
+ </p>
+		<img src="kuchnia_fuerta.jpg" alt="Krajobraz Teneryfy" style="max-width: 50%; border: 2px solid #ddd; border-radius: 8px; margin-top: 1rem;">
+<br>
+<br>
+<br>
+<b>
+<p>Fuerteventura to wyspa, która zachwyca swoją prostotą i harmonią. Niezależnie od tego, czy szukasz relaksu, kontaktu z naturą, czy aktywności na wodzie, Fuerteventura oferuje niezapomniane wrażenia, spokój i przestrzeń, które zostaną w pamięci na długo. To idealne miejsce na wakacje w stylu slow life.
+
+
+
+</p>
+</b>
+    </div>
+
+    <footer>
+            <p>&copy; <b> Bartosz Żądło 2025 - Wyspy Kanaryjskie. <br> Wszelkie prawa zastrzeżone. </p> </b>
+    </footer>
+	
+	   <script>
+        function hideLoader() {
+            document.getElementById('loader').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
